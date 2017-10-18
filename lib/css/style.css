@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************** RESET ENDS HERE  *************/
+
+/*************** MEDIA QUERY *************/
+
+@media only screen and (max-width: 1386px) {
+	#header {
+		width: 100%;
+	}
+	#header #nav-links {
+		line-height: 20px;
+	}
+	#header #nav-links li {
+		display: block;
+		margin: 10px;
+	}
+	#header #nav-links li a {
+		font-size: 1em;
+	}
+	.home-content {
+		height: 100%;
+	}
+	.home-content .welcome-div, .home-content .other-div {
+		width: 70%;
+		margin: 10px auto;
+		text-align: center;
+	}
+	.home-content .welcome-div h1, .home-content .other-div h1 {
+		font-size: 3em;
+		text-align: center;
+	}
+
+	.home-content .other-div img {
+		display: none;
+	}
+	.home-content .other-div p {
+		width: 100%;
+		padding: 25px;
+	}
+	footer {
+		margin-top: 25px;
+	}
+}
+
+/*************** HEADER *************/
+#header {
+  background-color: black;
+  height: 145px;
+	width: 100%;
+	/*background-image: url(./lib/img/banner.jpg);*/
+}
+#nav-links {
+  line-height: 145px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+#nav-links li {
+  display: inline;
+  /*background-color: green;*/
+  /*padding: 10px;*/
+  text-align: center;
+  margin: 50px;
+}
+#nav-links li a {
+  /*margin: 50px 0 50px 10px;*/
+	font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+	margin: 0 auto;
+  letter-spacing: 0.5em;
+	font-family: 'Titillium Web', sans-serif;
+}
+#nav-links li a:hover {
+  color: #e5f4f9;
+	/*border-bottom: 2px solid #e5f4f9;*/
+  /*background-color: grey;*/
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+}
+
+/*************** WEBSITE LAYOUT *************/
+body {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	/*overflow-x: hidden;*/
+}
+
+/*************** HOME PAGE *************/
+.home-content {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+  /*margin: 0 auto;*/
+}
+.welcome-div {
+  background-color: #e5f4f9;
+	/*margin: 25px auto;*/
+  height: 50%;
+  width: 100%;
+	padding-top: 25px;
+}
+.welcome-div h1 {
+	text-align: left;
+	font-size: 6em;
+	font-family: 'Titillium Web', sans-serif;
+}
+.welcome-div p {
+	/*padding: 25px;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	padding: 25px;
+}
+
+.other-div {
+	/*margin: 0 auto;*/
+	padding: 25px;
+	margin-bottom: 100px;
+  /*background-color: #A2D9EB;*/
+  height: 50%;
+  width: 100%;
+}
+.other-div h1 {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 5em;
+}
+
+.other-div p {
+	font-family: 'Open Sans', sans-serif;
+	padding: 25px;
+	font-size: 1.5em;
+	width: 75%;
+}
+#home-photo {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 500px;
+	right: 50px;
+
+}
+
+/*************** ABOUT PAGE *************/
+.about-content {
+	width: 100%;
+	height: 100%;
+	margin: 25px 25px 150px 25px;
+	padding: 10px;
+}
+
+figure {
+	/*background-color: purple;*/
+	/*margin: 100px;*/
+	text-align: center;
+	float: left;
+}
+.profile-photo img {
+	border: 5px double;
+	width: 500px;
+	text-align: right;
+	margin: 25px;
+}
+
+.about-me {
+	text-align: center;
+}
+.about-me h1 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+}
+.about-me p {
+	line-height: normal;
+	margin: 10px;
+	padding: 50px;
+	text-align: left;
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+#linked, #contact-link {
+	color: black;
+}
+
+.index-more {
+	font-size: 2em;
+	font-family: 'Titillium Web', sans-serif;
+}
+/*************** PROJECTS PAGE *************/
+
+.projects-content {
+	width: 100%;
+	height: 100%;
+	column-count: 3;
+	column-gap: 30px;
+	column-rule-style: double;
+	margin: 10px;
+	/*padding: 25px;*/
+}
+#projects {
+	letter-spacing: 1.5em;
+	text-align: center;
+	margin: 10px;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	padding: 25px;
+}
+.cols h1 {
+	text-align: center;
+}
+.cols img {
+	width: 100%;
+	margin-top: 10px;
+
+}
+
+.cols a:hover {
+	opacity: 0.5;
+}
+/*************** RESUME PAGE *************/
+
+.resume-content {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 200px;
+	overflow: scroll;
+
+	/*text-align: center;*/
+	/*margin: 0 auto;*/
+}
+
+.resume-content h1 {
+	padding: 25px;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1.5em;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+}
+.resume-content #summary {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin: 20px;
+	font-size: 1.5em;
+}
+
+.resume-content a:link, a:visited {
+	background-color: #e5f4f9;
+	color: black;
+	border: 5px double black;
+	border-radius: 50px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+#downloadbtn {
+	position: absolute;
+	margin-right: 5px;
+	top: 150px;
+	right: 0;
+}
+.resume-content a:hover, a:active {
+    opacity: 1.5;
+    color: black;
+}
+.resume-content h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.25em;
+	text-align: left;
+	font-family: 'Titillium Web', sans-serif;
+}
+.resume-content .jobs {
+	background-color: #e5f4f9;
+	padding: 25px;
+}
+.resume-content .jobs h3 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 0.15em;
+	text-align: right;
+	font-family: 'Open Sans', sans-serif;
+}
+.resume-content .jobs p {
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 15px;
+	font-family: 'Titillium Web', sans-serif;
+}
+.resume-content .jobs .resp li {
+	list-style-type: circle;
+	font-family: 'Open Sans', sans-serif;
+}
+.resume-content .jobs p .dates {
+	text-align: right;
+}
+.resume-content .volunteer {
+	padding: 25px;
+}
+
+.resume-content .volunteer h2 {
+	font-family: 'Titillium Web', sans-serif;
+	/*text-align: right;*/
+	font-family: 'Open Sans', sans-serif;
+}
+.resume-content .volunteer h3 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 0.15em;
+	text-align: right;
+	font-family: 'Open Sans', sans-serif;
+}
+.resume-content .volunteer .resp li {
+	list-style-type: circle;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.resume-content .volunteer p {
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+.resume-content .skills {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	background-color: #e5f4f9;
+	padding: 25px;
+}
+.resume-content .skills p {
+	padding: 5px;
+}
+/*************** CONTACT PAGE *************/
+
+.contact-content {
+	height: 85%;
+	width: 100%;
+	text-align: center;
+}
+.contact-content h1 {
+	padding: 10px;
+}
+.contact {
+	margin: 15px;
+	border: 2px solid;
+	background-color: #b2b2b2;
+	background: url(https://static1.squarespace.com/static/5554d665e4b0277cbe17069a/t/55c29e47e4b0300f07667541/1438817866222/tech-blog-banner.jpg?format=1500w) no-repeat 50% 50%;
+}
+.contact-content h1 {
+	letter-spacing: 1.5em;
+	margin: 10px;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+}
+.contact input {
+	margin: 10px;
+	width: 300px;
+	height: 35px;
+	border: 1px solid;
+	border-radius: 7px;
+}
+
+.contact textarea {
+	margin: 10px;
+	width: 630px;
+	height: 150px;
+	border: 1px solid;
+	border-radius: 7px;
+}
+
+#submitbtn {
+	background-color: #e5f4f9;
+}
+
+/*************** FOOTER *************/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #cccccc;
+	margin-top: 100px;
+  height: 150px;
+  width: 100%;
+}
+#copyright {
+  /*color: white;*/
+  line-height: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
