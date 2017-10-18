@@ -4,7 +4,7 @@ include('inc/header.php');
   <div class="home-content">
 
       <div class="welcome-div">
-        <h1>Hello</h1>
+        <h1>Hello, My Name is Malik</h1>
         <p>
           Welcome to my Portfolio Site! I am an apsiring front-end web developer. This site will give you a little information about who I am, showcase my design skills, and show some examples of the work I've worked on over the past four months of training. I appreciate you for visiting my page and would love to here some feedback on what you think of the site.
         </p>
