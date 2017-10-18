@@ -125,10 +125,6 @@ table {
   /*background-color: grey;*/
 }
 
-#logo {
-	width: 100px;
-	height: 100px;
-}
 
 /*************** WEBSITE LAYOUT *************/
 body {
@@ -271,6 +267,8 @@ figure {
 }
 .cols h1 {
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
 }
 .cols img {
 	width: 100%;
