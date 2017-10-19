@@ -48,87 +48,6 @@ table {
 }
 /*************** RESET ENDS HERE  *************/
 
-/*************** MEDIA QUERY *************/
-
-@media only screen and (max-width: 1386px) {
-	.container {
-		width: 100%;
-	}
-	#header {
-		width: 100%;
-	}
-	#header #nav-links {
-		line-height: 20px;
-	}
-	#header #nav-links li {
-		display: block;
-		margin: 10px;
-	}
-	#header #nav-links li a {
-		font-size: 1em;
-	}
-	.home-content {
-		height: 100%;
-	}
-	.home-content .welcome-div, .home-content .other-div {
-		width: 70%;
-		margin: 10px auto;
-		text-align: center;
-	}
-	.home-content .welcome-div h1, .home-content .other-div h1 {
-		font-size: 3em;
-		text-align: center;
-	}
-
-	.home-content .other-div img {
-		display: none;
-	}
-	.home-content .other-div p {
-		width: 100%;
-		padding: 25px;
-	}
-	.about-content {
-		position: relative;
-	}
-	.about-content figure {
-		width: 100%;
-	}
-	.about-content .about-me {
-		width: 100%;
-	}
-	.resume-content {
-
-	}
-	.projects-content {
-		width: 100%;
-		column-width: 600px;
-		column-count: 1;
-	}
-	.projects-content .cols {
-		/*width: 100%;*/
-	}
-	.contact-content {
-		width: 100%;
-		margin-bottom: 150px;
-	}
-	footer {
-		margin-top: 25px;
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
-.container {
-	height: 90%;
-}
-.home-content .welcome-div, .home-content .other-div {
-	height: 400px;
-	width: 75%;
-	text-align: center;
-}
-
-}
-
 /*************** HEADER *************/
 #header {
   background-color: black;
@@ -207,7 +126,6 @@ body {
 .welcome-div {
   background-color: #e5f4f9;
 	/*margin: 25px auto;*/
-  height: 50%;
   width: 100%;
 	padding-top: 25px;
 }
@@ -226,8 +144,8 @@ body {
 .other-div {
 	padding-top: 25px;
 	margin-bottom: 100px;
-  height: 50%;
   width: 100%;
+	position: relative;
 }
 .other-div h1 {
 	font-family: 'Titillium Web', sans-serif;
@@ -245,9 +163,8 @@ body {
 	height: 200px;
 	width: 200px;
 	position: absolute;
-	top: 500px;
-	right: 115px;
-
+	right: 0;
+	top: 100px;
 }
 
 /*************** ABOUT PAGE *************/
@@ -512,4 +429,85 @@ footer {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
+}
+
+/*************** MEDIA QUERY *************/
+
+@media only screen and (max-width: 1386px) {
+	.container {
+		width: 100%;
+	}
+	#header {
+		width: 100%;
+	}
+	#header #nav-links {
+		line-height: 20px;
+	}
+	#header #nav-links li {
+		display: block;
+		margin: 10px;
+	}
+	#header #nav-links li a {
+		font-size: 1em;
+	}
+	.home-content {
+		height: 100%;
+	}
+	.home-content .welcome-div, .home-content .other-div {
+		width: 70%;
+		margin: 10px auto;
+		text-align: center;
+	}
+	.home-content .welcome-div h1, .home-content .other-div h1 {
+		font-size: 3em;
+		text-align: center;
+	}
+
+	.home-content .other-div img {
+		display: none;
+	}
+	.home-content .other-div p {
+		width: 100%;
+		padding: 25px;
+	}
+	.about-content {
+		position: relative;
+	}
+	.about-content figure {
+		width: 100%;
+	}
+	.about-content .about-me {
+		width: 100%;
+	}
+	.resume-content {
+
+	}
+	.projects-content {
+		width: 100%;
+		column-width: 600px;
+		column-count: 1;
+	}
+	.projects-content .cols {
+		/*width: 100%;*/
+	}
+	.contact-content {
+		width: 100%;
+		margin-bottom: 150px;
+	}
+	footer {
+		margin-top: 25px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+.container {
+	height: 90%;
+}
+.home-content .welcome-div, .home-content .other-div {
+	height: 400px;
+	width: 75%;
+	text-align: center;
+}
+
 }
