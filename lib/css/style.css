@@ -110,21 +110,35 @@ table {
   margin: 50px;
 }
 #nav-links li a {
-  /*margin: 50px 0 50px 10px;*/
+  position: relative;
 	font-size: 1.5em;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 	margin: 0 auto;
+	border-bottom: 0 solid;
   letter-spacing: 0.5em;
 	font-family: 'Titillium Web', sans-serif;
 }
-#nav-links li a:hover {
-  color: #e5f4f9;
-	/*border-bottom: 2px solid #e5f4f9;*/
-  /*background-color: grey;*/
+#nav-links li a:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e5f4f9;
+	width: 0;
+	height: 3px;
+	transition: all 0.4s;
 }
 
+#nav-links li a:hover {
+	color: #e5f4f9;
+}
+
+#nav-links li a:hover:after {
+	width: 100%;
+}
 
 /*************** WEBSITE LAYOUT *************/
 body {
