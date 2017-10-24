@@ -1,6 +1,5 @@
 <?php
 include('inc/header.php');
-$pageTitle = "Contact";
 ?>
   <div class="contact-content">
     <h1>Contact Me</h1>

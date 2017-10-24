@@ -1,6 +1,5 @@
 <?php
 include('inc/header.php');
-$pageTitle = "Resume";
 ?>
 <div class="resume-content">
   <h1>Resume</h1>

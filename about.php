@@ -1,6 +1,5 @@
 <?php
 include('inc/header.php');
-$pageTitle = "About";
 ?>
   <div class="about-content">
 

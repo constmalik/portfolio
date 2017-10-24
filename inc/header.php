@@ -4,7 +4,6 @@
   <title>Malik Robinson | Aspiring Front-End Developer</title>
   <link rel="stylesheet" href="./lib/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web" rel="stylesheet">
-
 </head>
   <body>
     <div class="container">

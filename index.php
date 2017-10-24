@@ -1,6 +1,5 @@
 <?php
 include('inc/header.php');
-$pageTitle = "Home";
 ?>
   <div class="home-content">
 
