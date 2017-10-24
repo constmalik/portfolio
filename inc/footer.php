@@ -1,8 +1,8 @@
-<footer>
-  <div>
-    <p id="copyright">&copy;2017 Malik Robinson</p>
+    <footer>
+      <div>
+        <p id="copyright">&copy;2017 Malik Robinson</p>
+      </div>
+    </footer>
   </div>
-</footer>
-</div>
 </body>
 </html>
